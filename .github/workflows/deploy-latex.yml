@@ -29,12 +29,12 @@ jobs:
       - name: Build Latex PDF and HTML
         run: |
           mkdir ./public
-          cp *.tex public/
+          cp src/*.tex public/
           cp -r assets/ public/
           cd public/
-          pdflatex main.tex
-          pdflatex main.tex
-          make4ht main.tex
+          pdflatex src/main.tex
+          pdflatex src/main.tex
+          make4ht src/main.tex
           mv main.html index.html
 
       # Save the TeX Live installation to cache for future use
