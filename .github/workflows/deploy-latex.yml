@@ -11,7 +11,9 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
+    container:
+      image: danteev/texlive:latest
 
     steps:
       - uses: actions/checkout@v3
@@ -23,11 +25,6 @@ jobs:
           path: |
             /usr/local/texlive
           key: texlive-${{ runner.os }}-${{ hashFiles('**/*.tex') }}
-
-      - name: Install TeX Live
-        run: |
-          sudo apt update
-          sudo apt install texlive-full
 
       - name: Build Latex PDF and HTML
         run: |
