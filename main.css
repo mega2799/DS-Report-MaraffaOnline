@@ -2,7 +2,16 @@
 /* start css.sty */
 .cmr-10x-x-109{}
 .cmr-17{font-size:154%;}
-.cmr-12{font-size:109%;}
+.cmssbx-10x-x-172{font-size:156%; font-family: sans-serif; font-weight: bold;}
+.cmr-12x-x-120{font-size:130%;}
+.cmtt-12x-x-120{font-size:130%;font-family: monospace,monospace;}
+.cmtt-12x-x-120{font-family: monospace,monospace;}
+.cmmi-10x-x-109{font-style: italic;}
+.cmsy-10x-x-109{}
+.cmtt-10x-x-109{font-family: monospace,monospace;}
+.cmtt-10x-x-109{font-family: monospace,monospace;}
+.cmti-10x-x-109{ font-style: italic;}
+.cmbx-10x-x-109{ font-weight: bold;}
 p{margin-top:0;margin-bottom:0}
 p.indent{text-indent:0;}
 p + p{margin-top:1em;}
@@ -132,6 +141,12 @@ figcaption.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-al
 figcaption.caption span.id{font-weight: bold; white-space: nowrap; }
 p + figcaption, img + figcaption{margin-top: 1em;}
 .abstract{margin:1em;}
+span.footnote-mark sup.textsuperscript, span.footnote-mark a sup.textsuperscript{ font-size:80%; }
+figure.float, div.figure {margin-left: auto; margin-right: auto;}
+figure.figure {text-align:center;}
+figcaption.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:center;}
+figcaption.caption span.id{font-weight: bold; white-space: nowrap; }
+p + figcaption, img + figcaption{margin-top: 1em;}
 .rotatebox{display: inline-block;}
 /* end css.sty */
 
