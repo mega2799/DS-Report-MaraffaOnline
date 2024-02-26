@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2024.2.26)  26 FEB 2024 19:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=latex 2023.5.7)  26 FEB 2024 19:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -9,8 +9,8 @@ tyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname tex4ht\e
 ndcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HCode}{\
 documentstyle[tex4ht]}}}\makeatother\HCode xhtml,,charset=utf-8,html5.a.b.c.\in
 put "\detokenize{main.tex}"
-(./main.tex (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tex4ht.sty
-version 2021-09-14-14:11
+(./main.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+version 2023-02-03-14:48
 Package: tex4ht 
 --------------------------------------
 --- Note --- for _ at preamble, use the command line option `early_'
@@ -19,10 +19,10 @@ Package: tex4ht
 --- Note --- for ^ at preamble, use the command line option `early^'
 --------------------------------------
 \tmp:toks=\toks16
-) (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -32,54 +32,54 @@ File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \c@subparagraph=\count190
 \c@figure=\count191
 \c@table=\count192
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
-\bibindent=\dimen138
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/usepackage.4ht
-version 2022-01-11-14:12
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/usepackage.4ht
+version 2023-01-12-14:08
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/graphics-hooks.4ht
-version 2020-10-17-13:53
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/graphics-hooks.4ht
+version 2022-08-17-14:25
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvips.def on input line 107.
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def
-File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
 ))
-\Gin@req@height=\dimen139
-\Gin@req@width=\dimen140
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tex4ht.4ht
-version 2021-06-20-15:33
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/tex4ht.4ht
+version 2022-07-05-14:37
 --------------------------------------
 --- Note --- for additional information, use the command line option `info'
 --------------------------------------
 ::::::::::::::::::::::::::::::::::::::::::
  TeX4ht info is available in the log file 
 ::::::::::::::::::::::::::::::::::::::::::
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tex4ht.sty
-version 2021-09-14-14:11
-l.855 --- TeX4ht warning --- nonprimitive \everypar ---
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+version 2023-02-03-14:48
+l.864 --- TeX4ht warning --- nonprimitive \everypar ---
 --- needs --- tex4ht main ---
 \tmp:cnt=\count193
 \openout15 = `main.tmp'.
 
 (./main.tmp)
-\tmp:dim=\skip49
+\tmp:dim=\skip50
 (./main.xref)
 \:refout=\write3
 \openout3 = `main.xref'.
 
-(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
-version 2022-02-03-14:35
+(/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2023-04-21-14:38
 --------------------------------------
 --- Note --- to remove the <?xml version=...?> processing instruction use the c
 ommand line option `no-VERSION'
@@ -88,12 +88,12 @@ ommand line option `no-VERSION'
 --- Note --- to remove the DOCTYPE declaration use the command line option `no-
 DOCTYPE'
 --------------------------------------
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
-version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
-version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
-version 2022-01-23-07:51
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2023-04-02-08:01
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2022-10-25-13:59
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2023-01-10-13:34
 )
 --------------------------------------
 --- Note --- for marking of the base font, use the command line option `fonts+'
@@ -111,8 +111,8 @@ version 2022-01-23-07:51
 --------------------------------------
 --- Note --- for ^ of catcode 13, use the command line option `^13'
 --------------------------------------
-(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
-version 2022-02-03-14:35
+(/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2023-04-21-14:38
 --------------------------------------
 --- Note --- to ignore CSS font decoration, use the `NoFonts' command line opti
 on
@@ -156,14 +156,18 @@ TeX4ht package options: xhtml,charset=utf-8,html5,html
 --- Note --- for addressing images in a subdirectory, use the command line opti
 on `imgdir:.../'
 --------------------------------------
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
-version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
-version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
-version 2022-01-23-07:51
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2023-04-02-08:01
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2022-10-25-13:59
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2023-01-10-13:34
 --------------------------------------
 --- Note --- To print a timestamp, use the command line option timestamp
+--------------------------------------
+--------------------------------------
+--- Note --- We use a default CSS style. Use the `nostyle' option if you want t
+o use custom a CSS design
 --------------------------------------
 )
 \:tokwrite=\toks18
@@ -180,36 +184,38 @@ version 2022-01-23-07:51
 \:tocout=\write4
 \openout4 = `main.4tc'.
 
-(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
-version 2022-02-03-14:35
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
-version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
-version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
-version 2022-01-23-07:51
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/latex.4ht
-version 2022-02-01-14:27
-LaTeX Info: Redefining \_ on input line 173.
-LaTeX Info: Redefining \, on input line 792.
-LaTeX Info: Redefining \; on input line 793.
-LaTeX Info: Redefining \! on input line 794.
-LaTeX Info: Redefining \: on input line 795.
-LaTeX Info: Redefining \> on input line 796.
+(main.4tc) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2023-04-21-14:38
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2023-04-02-08:01
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2022-10-25-13:59
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2023-01-10-13:34
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/latex.4ht
+version 2023-05-02-13:45
+LaTeX Info: Redefining \_ on input line 179.
+LaTeX Info: Redefining \begin on input line 597.
+LaTeX Info: Redefining \end on input line 645.
+LaTeX Info: Redefining \, on input line 807.
+LaTeX Info: Redefining \; on input line 808.
+LaTeX Info: Redefining \! on input line 809.
+LaTeX Info: Redefining \: on input line 810.
+LaTeX Info: Redefining \> on input line 811.
 --------------------------------------
 --- Note --- for links into captions, instead of float heads, use the command l
 ine option `refcaption'
 --------------------------------------
-(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
-version 2022-02-03-14:35
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
-version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
-version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
-version 2022-01-23-07:51
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
-version 2022-02-03-14:35
+(/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2023-04-21-14:38
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2023-04-02-08:01
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2022-10-25-13:59
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2023-01-10-13:34
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2023-04-21-14:38
 --------------------------------------
 --- Note --- For mini tocs immediately aftter the header use the command line o
 ption `minitoc<'
@@ -247,10 +253,10 @@ onts'
 ommand line option or a configuration similar to \Configure{HColWidth}{\HCode{ 
 style="width:\HColWidth"}}
 --------------------------------------
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
-version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
-version 2021-04-16-13:27
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2023-04-02-08:01
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2022-10-25-13:59
 --------------------------------------
 --- Note --- for pictorial eqnarray, use the command line option `pic-eqnarray'
 
@@ -269,22 +275,22 @@ he command line option `pic-m+' (not safe!!)
 --------------------------------------
 --- Note --- for pictorial array, use the command line option `pic-array'
 --------------------------------------
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
-version 2022-01-23-07:51
-)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/fontmath.4ht
-version 2018-11-06-15:55
-(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
-version 2022-02-03-14:35
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
-version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
-version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
-version 2022-01-23-07:51
-)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/article.4ht
-version 2021-05-16-09:21
-(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
-version 2022-02-03-14:35
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2023-01-10-13:34
+)) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/fontmath.4ht
+version 2022-10-25-13:59
+(/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2023-04-21-14:38
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2023-04-02-08:01
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2022-10-25-13:59
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2023-01-10-13:34
+)) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/article.4ht
+version 2023-04-10-13:46
+(/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2023-04-21-14:38
 --------------------------------------
 --- Note --- for automatic sectioning pagination, use the command line option `
 1', `2', `3', '4', '5', '6', or '7'
@@ -297,65 +303,66 @@ option `sec-filename'
 --- Note --- for i-columns index, use the command line option `index=i' (e.g., 
 index=2)
 --------------------------------------
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
-version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
-version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
-version 2022-01-23-07:51
-)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/graphicx.4ht
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2023-04-02-08:01
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2022-10-25-13:59
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2023-01-10-13:34
+)) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/graphicx.4ht
 version 2022-01-12-13:53
-(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
-version 2022-02-03-14:35
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
-version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
-version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
-version 2022-01-23-07:51
-)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/graphics.4ht
-version 2021-08-12-13:49
-(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
-version 2022-02-03-14:35
+(/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2023-04-21-14:38
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2023-04-02-08:01
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2022-10-25-13:59
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2023-01-10-13:34
+)) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/graphics.4ht
+version 2022-03-20-14:29
+(/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2023-04-21-14:38
 --------------------------------------
 --- Note --- if included graphics are of degraded quality, try the command line
  options `graphics-num' or `graphics-'. The `num' should provide the density of
  pixels in the bitmaps (e.g., 110). 
 --------------------------------------
 --------------------------------------
---- Note --- for key dimensions try the option `Gin-dim'; for key dimensions wh
-en bounding box is unavailable try `Gin-dim+'; neither is recommended
+--- Note --- for setting image dimensions, try the option `Gin-dim'; to use per
+cents instead of units, use `Gin-perecent'; for key dimensions when bounding bo
+x is unavailable try `Gin-dim+'; neither is recommended
 --------------------------------------
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
-version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
-version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
-version 2022-01-23-07:51
-)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/dvips.4ht
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2023-04-02-08:01
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2022-10-25-13:59
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2023-01-10-13:34
+)) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/dvips.4ht
 version 2009-05-21-09:32
-(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
-version 2022-02-03-14:35
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
-version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
-version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
-version 2022-01-23-07:51
-)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
-version 2022-02-03-14:35
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
-version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
-version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
-version 2022-01-23-07:51
-)) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
-File: l3backend-dvips.def 2022-01-12 L3 backend support: dvips
-\l__pdf_internal_box=\box50
+(/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2023-04-21-14:38
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2023-04-02-08:01
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2022-10-25-13:59
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2023-01-10-13:34
+)) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2023-04-21-14:38
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2023-04-02-08:01
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2022-10-25-13:59
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2023-01-10-13:34
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2023-04-19 L3 backend support: dvips
+\l__pdf_internal_box=\box51
 \g__pdf_backend_object_int=\count194
-\l__pdf_backend_content_box=\box51
-\l__pdf_backend_model_box=\box52
+\l__pdf_backend_content_box=\box52
+\l__pdf_backend_model_box=\box53
 \g__pdf_backend_annotation_int=\count195
 \g__pdf_backend_link_int=\count196
 \g__pdf_backend_link_sf_int=\count197
@@ -399,12 +406,12 @@ l. 32 --- needs --- assets/placeholder.png ---
 
 ] [9] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 4652 strings out of 478288
- 59029 string characters out of 5849315
- 476747 words of memory out of 5000000
- 22766 multiletter control sequences out of 15000+600000
- 473367 words of font info for 42 fonts, out of 8000000 for 9000
+ 4702 strings out of 476048
+ 61396 string characters out of 5790280
+ 1852245 words of memory out of 5000000
+ 25050 multiletter control sequences out of 15000+600000
+ 516395 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,6n,81p,831b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,6n,74p,831b,519s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (9 pages, 12592 bytes).
+Output written on main.dvi (9 pages, 13396 bytes).
