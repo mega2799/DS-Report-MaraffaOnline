@@ -19,22 +19,22 @@ jobs:
       - uses: actions/checkout@v3
 
       # Restore the TeX Live installation from cache
-      - name: Restore TeX Live Cache
-        uses: actions/cache@v2
-        with:
-          path: |
-            /usr/local/texlive
-          key: texlive-${{ runner.os }}-${{ hashFiles('**/*.tex') }}
+      # - name: Restore TeX Live Cache
+      #   uses: actions/cache@v2
+      #   with:
+      #     path: |
+      #       /usr/local/texlive
+      #     key: texlive-${{ runner.os }}-${{ hashFiles('**/*.tex') }}
 
       - name: Build Latex PDF and HTML
         run: |
           mkdir ./public
-          cp src/*.tex public/
+          cp src/* public/
           cp -r assets/ public/
           cd public/
-          pdflatex src/main.tex
-          pdflatex src/main.tex
-          make4ht src/main.tex
+          pdflatex main.tex
+          pdflatex main.tex
+          make4ht main.tex
           mv main.html index.html
 
       # Save the TeX Live installation to cache for future use
