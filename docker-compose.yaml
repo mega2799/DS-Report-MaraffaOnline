@@ -6,5 +6,5 @@ services:
     volumes:
       - "./:/workdir"
     working_dir: "/workdir"
-    command: ["latexmk", "-pdf", "src/main.tex"]
+    command: ["latexmk", "-pdf", "report/main.tex"]
 
