@@ -28,13 +28,13 @@ jobs:
 
       - name: Build Latex PDF and HTML
         run: |
-          mkdir ./public
-          cp -r report/* public/
-          cp -r assets/ public/
-          cd public/
-          pdflatex main.tex
-          pdflatex main.tex
-          make4ht main.tex
+          # mkdir ./public
+          # cp -r report/* public/
+          # cp -r assets/ public/
+          # cd report/
+          pdflatex report/main.tex
+          pdflatex report/main.tex
+          make4ht main.tex report/*
           mv main.html index.html
 
       # Save the TeX Live installation to cache for future use
@@ -49,16 +49,16 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: PDF
-          path: public/main.pdf
+          path: main.pdf
 
       - name: Publish PDF
         uses: softprops/action-gh-release@v1
         with:
           tag_name: Current
-          files: public/main.pdf
+          files: main.pdf
 
       - name: Publish HTML to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./report
