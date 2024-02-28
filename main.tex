@@ -1,164 +1,268 @@
-\documentclass{scrartcl}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                           %%
+%%   Dr Varun Ojha                                                           %%
+%%   Lecturer, Department of Computer Science                                %% 
+%%   University of Reading, UK                                               %%
+%%                                                                           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%     SETTING STARTS - DO NOT CHANGE Unless your TeX setting require so   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%----------------------------------------------------------------------------------
+% DO NOT Change this. It is the required setting A4 page, 11pt, onside print, book style
+%%----------------------------------------------------------------------------------
+\documentclass[a4paper,11pt,oneside]{book}
+
+%%-------------------------------------
+%% Page margin settings - % half inch margin all sides (recommended)
+%%-------------------------------------
+\usepackage[margin=1.2in]{geometry} 
+
+%%-------------------------------------
+%% Font settings - % CM San or Ariel (recommended)
+%%-------------------------------------
+% Switch the following two line off: to revert back to default LaTex font (NOT recommended)
+\usepackage{amsfonts}
+\renewcommand*\familydefault{\sfdefault}
+
+%%-------------------------------------
+%% Math/Definition/Theorem/Algorithm packages settings 
+%%-------------------------------------
+\usepackage[cmex10]{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\newtheorem{mydef}{Definition}
+\newtheorem{mytherm}{Theorem}
+
+%%-------------------------------------
+%% Algorithms/Code Listing environment settings  - 
+%% Please do not change these settings
+%%-------------------------------------
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
 \usepackage[utf8]{inputenc}
-\usepackage{hyperref}
-\usepackage{url}
-\usepackage{natbib}
+\usepackage{listings}
+\usepackage{xcolor}
+\definecolor{codegreen}{rgb}{0,0.6,0.1}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codeblue}{rgb}{0.10,0.00,1.00}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{1.0,1.0,1.0}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{codeblue},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                        
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame=none
+}
+\lstset{style=mystyle}
+
+%%-------------------------------------
+%% Graphics/Figures environment settings
+%%-------------------------------------
 \usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{caption}
+\usepackage{lipsum}
 
-\newcommand{\emailaddr}[1]{\href{mailto:#1}{\texttt{#1}}}
+%%-------------------------------------
+%% Table environment settings
+%%-------------------------------------
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{makecell}
+\usepackage{booktabs}
+%\usepackage{longtable,booktabs}
 
-\title{\LARGE
-    Final Report MaraffaOnline DS 
-}
+%%-------------------------------------
+%% List of Abbreviations settings
+%%-------------------------------------
+\usepackage{enumitem}
+\newlist{abbrv}{itemize}{1}
+\setlist[abbrv,1]{label=,labelwidth=1in,align=parleft,itemsep=0.1\baselineskip,leftmargin=!}
 
-% Consider watching:
-% https://www.youtube.com/watch?v=ihxSUsJB_14
-% https://www.youtube.com/watch?v=XTFWaV55uDo
+%%-------------------------------------
+%% Bibliography/References settings   - Harvard Style was used in this report
+%%-------------------------------------
+\usepackage[hidelinks]{hyperref}
+\usepackage[comma,authoryear]{natbib}
+\renewcommand{\bibname}{References} % DO NOT remove or switch of 
 
-\author{
-    Author 1 \\ \emailaddr{matteo.santoro@studio.unibo.it}
-    \and 
-    Author 2 \\ \emailaddr{sofia.tosi4@studio.unibo.it} 
-}
-
-\date{January 2019}
-
+%%-------------------------------------
+%% Appendix settings     
+%%-------------------------------------
+\usepackage[toc]{appendix}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%                     SETTING ENDS                                            %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-\maketitle
-
-\begin{abstract}
-    Up to $\sim$2000 characters briefly describing the project.
-\end{abstract}
-
-\section{Goal/Requirements}
-
-Detailed description of the project goals, requirements, and expected outcomes.
-%
-Use case Diagrams, examples, or Q/A simulations are welcome.
-
-\subsection{Scenarios}
-
-Informal description of the ways users are expected to interact with your project.
-%
-It should describe \emph{how} and \emph{why} a user should use / interact with the system.
-
-\subsection{Self-assessment policy}
-
-\begin{itemize}
-    \item How should the \emph{quality} of the \emph{produced software} be assessed?
+    \captionsetup[figure]{margin=1.5cm,font=small,name={Figure},labelsep=colon}
+    \captionsetup[table]{margin=1.5cm,font=small,name={Table},labelsep=colon}
+    % \setlipsumdefault{1}
     
-    \item How should the \emph{effectiveness} of the project outcomes be assessed?
-\end{itemize}
+    \frontmatter
+    
+    \begin{titlepage}      
+        \begin{center}
+            % \includegraphics[width=3cm]{figures/uorlogo.png}\\[0.5cm]
+            {\LARGE University of Reading\\[0.5cm]
+            Department of Computer Science}\\[2cm]
+			%{\color{blue} \rule{\textwidth}{1pt}}
+			
+			% -------------------------------
+			% You need to edit some details here
+			% -------------------------------  
+            \linespread{1.2}\huge {
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                %TODO: 1 TITLE of Your PROJECT 
+                Maraffa Online Distributed System
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                % chnage the following line                
+                Computer Science Undergraduate Report Template and Report Writing Guide
+            
+            }
+            \linespread{1}~\\[2cm]
+			%{\color{blue} \rule{\textwidth}{1pt}}
+            {\Large 
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                %TODO: 2 YOUR NAME
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%             
+                % chnage the following line
+                Sofia Tosi
+                Matteo Santoro 
+                % change end             
+            }\\[1cm] 
+            
 
-\section{Requirements Analysis}
+            {\large 
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                %TODO: 3 YOUR NAME Supervisor's name(s)
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%             
+                % change the following line                
+                \emph{Supervisors:} 
+                Giovanni Ciatto
+                Matteo Magnani
+                Andrea Omicini
+                }\\[1cm] % if applicable
+    		% PLEASE DO NOT CHANGE THIS TEXT %
+            \large A report submitted in partial fulfilment of the requirements of\\the University of Reading for the degree of\\ Bachelor of Science in \textit{Computer Science}\\[0.3cm] 
+            \vfill
+            
+            
+            \today % Please update this date you can use \date{April 2020} for fixed date
+        \end{center}
+    \end{titlepage}
+    
+    
+    % -------------------------------------------------------------------
+    % Declaration
+    % -------------------------------------------------------------------
+    \newpage
+    \thispagestyle{empty}
+    \chapter{\Large Declaration}
+    % PLEASE CHANGE THIS TEXT EXCEPT YOUR NAME%
+    % -------------------------------
+    %TODO: PLEASE ONLY UPDATE HERE -- PLEASE WRITE YOUR NAME %    
+    % ------------------------------- 
+    We,
+    %%%%%%%%%%%%%%%%%%%%%%%
+    Sofia tosi, Matteo Santoro
+    %%%%%%%%%%%%%%%%%%%%%%%
+    of the Department of Computer Science, University of Reading, confirm that this is my own work and figures, tables, equations, code snippets, artworks, and illustrations in this report are original and have not been taken from any other person's work, except where the works of others have been explicitly acknowledged, quoted, and referenced. I understand that if failing to do so will be considered a case of plagiarism. Plagiarism is a form of academic misconduct and will be penalised accordingly. \\
+    
+    %% Please delete as appropriate. 
+    \noindent
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    %TODO 1 Consent for example copy -  we will use 
+    I give consent to a copy of my report being shared with future students as an exemplar. \\
+    
+    \noindent
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    %TODO 2 Consent to let the report to use use by library for public use
+    I give consent for my work to be made available more widely to members of UoR and public with interest in teaching, learning and research. 
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    ~\\[1cm]
+    \begin{flushright}
+	%------------------------------ 
+	% change the following line
+    %TODO: PLEASE UPDATE  Your Name  -------------------------------%
+	Firstname(s) Lastname % Please change it to your name
+    Sofia Tosi
+    Matteo Santoro
+    
+    \today
+    \end{flushright}
 
-Is there any implicit requirement hidden within this project's requirements?
-%
-Is there any implicit hypothesis hidden within this project's requirements?
-%
-Are there any non-functional requirements implied by this project's requirements?
+     
+    % -------------------------------------------------------------------
+    % Abstract and Acknowledgement
+    % -------------------------------------------------------------------
+    
+    \input{report/chapters/abstract.tex}
+    % -------------------------------------------------------------------
+	% Acknowledgement
+	% -------------------------------------------------------------------
+   
+    \input{report/chapters/acknowledgments.tex}   
+    
+    % -------------------------------------------------------------------
+    % Contents, list of figures, list of tables
+    % -------------------------------------------------------------------
+    
+    \tableofcontents
+    \listoffigures
+    \listoftables
+    \input{report/glossaries} %  Enter your list of Abbreviation and Symbols in this file
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%                                                                    %%  
+    %%  Main chapters and sections of your project                        %%  
+    %%  Everything from here on needs updates in your own words and works %%
+    %%                                                                    %%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \mainmatter
+    % Read for preparation of document in LaTex 
+    % Lamport, L. (1986), LATEX: A Document Preparation System, Addison-Wesley.
+    
+    \input{report/chapters/introduction.tex}
+    \input{report/chapters/literature.tex}% https://guides.library.bloomu.edu/litreview
+    \input{report/chapters/methodology.tex}
+    \input{report/chapters/results.tex}
+    \input{report/chapters/discussion.tex}
+    \input{report/chapters/conclusions.tex}
+    \input{report/chapters/reflection.tex}
+    
 
-What model / paradigm / techonology is the best suited to face this project's requirements?
-%
-What's the abstraction gap among the available models / paradigms / techonologies and the problem to be solved?
-
-\section{Design}
-
-This is where the logical / abstract contribution of the project is presented.
-
-Notice that, when describing a software project, three dimensions need to be taken into account: structure, behaviour, and interaction.
-
-Always remember to report \textbf{why} a particular design has been chosen.
-Reporting wrong design choices which has been evalued during the design phase is welcome too.
-
-\subsection{Structure}
-
-Which entities need to by modelled to solve the problem?
-%
-(UML Class diagram)
-
-How should entities be modularised?
-%
-(UML Component / Package / Deployment Diagrams)
-
-\subsection{Behaviour}
-
-How should each entity behave?
-%
-(UML State diagram or Activity Diagram)
-
-\subsection{Interaction}
-
-How should entities interact with each other?
-%
-(UML Sequence Diagram)
-
-\section{Implementation Details}
-
-Just report interesting / non-trivial / non-obvious implementation details.
-
-This section is expected to be short in case some documentation (e.g. Javadoc or Swagger Spec) has been produced for the software artefacts.
-%
-This this case, the produced documentation should be referenced here.
-
-\section{Self-assessment / Validation}
-
-Choose a criterion for the evaluation of the produced software and \textbf{its compliance to the requirements above}.
-
-Pseudo-formal or formal criteria are preferred.
-
-In case of a test-driven development, describe tests here and possibly report the amount of passing tests, the total amount of tests and, possibly, the test coverage.
-
-\section{Deployment Instructions}
-
-Explain here how to install and launch the produced software artefacts.
-%
-Assume the softaware must be installed on a totally virgin environment.
-%
-So, report \textbf{any} configuration step.
-
-Gradle and Docker may be useful here to ensure the deployment and launch processes to be easy.
-
-\section{Usage Examples}
-
-Show how to use the produced software artefacts.
-
-Ideally, there should be at least one example for each scenario proposed above.
-
-\section{Conclusions}
-
-Recap what you did
-
-\subsection{Future Works}
-
-Recap what you did \emph{not}
-
-\subsection{What did we learned}
-
-Racap what did you learned
-
-\section*{Stylistic Notes}
-
-Use a uniform style, especially when writing formal stuff: $X$, X, $\mathbf{X}$, $\mathcal{X}$, \texttt{X} are all different symbols possibly referring to different entities. 
-
-This is a very short paragraph.
-
-This is a longer paragraph (notice the blank line in the code).
-It composed by several sentences.
-%
-You're invited to use comments within \texttt{.tex} source files to separate sentences composing the same paragraph.
-
-Paragraph should be logically atomic: a subordinate sentence from one paragraph should always refer to another sentence from within the same paragraph.
-
-The first line of a paragraph is usually indented.
-%
-This is intended: it is the way \LaTeX{} lets the reader know a new paragraph is beginning.
-
-Use the \href{https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings}{\texttt{listing}} package for inserting scripts into the \LaTeX{} source.
-
-\nocite{*} % Includes all references from the `references.bib` file
-\bibliographystyle{plain}
-\bibliography{references}
-
+    
+    % -------------------------------------------------------------------
+    % Bibliography/References  -  Harvard Style was used in this report
+    % -------------------------------------------------------------------
+    \bibliographystyle{agsm} % Harvard Style 
+    
+    \bibliography{report/references}  %  Patashnik, O. (1988), BibTEXing. Documentation for general BibTEX users.
+    
+    % -------------------------------------------------------------------
+    % Appendices
+    % -------------------------------------------------------------------
+    
+    \begin{appendices}
+        \input{report/chapters/appendix_A.tex}
+        \input{report/chapters/appendix_B.tex}
+    \end{appendices}
+    
 \end{document}
