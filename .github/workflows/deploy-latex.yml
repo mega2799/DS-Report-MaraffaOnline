@@ -28,14 +28,19 @@ jobs:
 
       - name: Build Latex PDF and HTML
         run: |
-          # mkdir ./public
-          # cp -r report/* public/
-          # cp -r assets/ public/
-          # cd report/
+          mkdir ./public
+          pandoc report/main.tex -o public/index.html
           pdflatex report/main.tex
           pdflatex report/main.tex
-          make4ht main.tex report/*
-          mv main.html index.html
+          # cp report/main.tex ./main.tex
+          # make4ht main.tex report/*
+          # cp report/main.html ./public/index.html
+          # cp report/main.pdf ./public/main.pdf
+          # mv main.html index.html
+          # pdflatex report/main.tex
+          # pdflatex report/main.tex
+          # make4ht report/main.tex report/chapters/* report/*
+          # mv main.html index.html
 
       # Save the TeX Live installation to cache for future use
       - name: Save TeX Live Cache
@@ -61,4 +66,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./report
+          publish_dir: ./public
