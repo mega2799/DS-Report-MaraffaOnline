@@ -4,7 +4,7 @@ permissions: write-all
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "develop"]
   pull_request:
     branches: ["main"]
   workflow_dispatch:
@@ -32,6 +32,7 @@ jobs:
           pandoc report/main.tex -o public/index.html
           pdflatex report/main.tex
           pdflatex report/main.tex
+          make4ht report/main.tex 
           # cp report/main.tex ./main.tex
           # make4ht main.tex report/*
           # cp report/main.html ./public/index.html
@@ -40,7 +41,7 @@ jobs:
           # pdflatex report/main.tex
           # pdflatex report/main.tex
           # make4ht report/main.tex report/chapters/* report/*
-          # mv main.html index.html
+          mv main.html public/index.html
 
       # Save the TeX Live installation to cache for future use
       - name: Save TeX Live Cache
