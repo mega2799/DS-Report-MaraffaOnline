@@ -29,19 +29,9 @@ jobs:
       - name: Build Latex PDF and HTML
         run: |
           mkdir ./public
-          pandoc report/main.tex -o public/index.html
+          pandoc -s --toc -c latex2hmtl.css report/main.tex -o public/index.html
           pdflatex report/main.tex
           pdflatex report/main.tex
-          # make4ht report/main.tex 
-          # cp report/main.tex ./main.tex
-          # make4ht main.tex report/*
-          # cp report/main.html ./public/index.html
-          # cp report/main.pdf ./public/main.pdf
-          # mv main.html index.html
-          # pdflatex report/main.tex
-          # pdflatex report/main.tex
-          # make4ht report/main.tex report/chapters/* report/*
-          # mv main.html public/index.html
 
       # Save the TeX Live installation to cache for future use
       - name: Save TeX Live Cache
