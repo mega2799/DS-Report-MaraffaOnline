@@ -1,15 +1,45 @@
-# LaTex-Publishing
+# Report-ghPages-latex: Genera report LaTeX con Github Pages
 
 ## Description
+Report-ghPages-latex is a tool that facilitates the creation of LaTeX reports with Github Pages. It allows you to:
 
-If you want to publish your LaTex document on Github Pages as HTML and in releases as PDF, you can use this template repository, you just need to modify the [main.tex](./main.tex) file according to your needs.
+- Automatically compile your LaTeX report to PDF
+- Publish the report online automatically, with an easy-to-share URL
+- Integrate with Git for version control
 
-Please put all the images in the [assets](./assets/) folder if you don't want to modify the [deploy-latex.yml](.github/workflows/deploy-latex.yml) file.
+## Features
+- Automatic compilation of your LaTeX report with pdflatex or xelatex
+- Support for common LaTeX packages
+- Publication of the report on Github Pages with a customizable URL
+- Integration with Git for version control and change tracking
+- Automatic generation of an index and bibliography
+- Customization of the report layout with templates
+- Support for automatic numbering of figures and tables
 
-## Important Notes
+## Installation 
 
-- When you run the workflow for the first time, it will create a `gh-pages` branch, so please don't delete it, follow the [instructions](https://github.com/peaceiris/actions-gh-pages?tab=readme-ov-file#%EF%B8%8F-first-deployment-with-github_token) to create a Github Pages site.
+```You don't need one```
 
-- The compiled PDF file will be in the releases page always in the `Current` release as [main.pdf](https://github.com/MemerGamer/LaTex-Publishing/releases/download/Current/main.pdf). The PDF file will be overwritten in every release.
-- The compiled HTML file will be in the [gh-pages](https://github.com/MemerGamer/LaTex-Publishing/tree/gh-pages) branch always with name, the HTML file will be overwritten in every release.
-- The compilation time is around 8-10 minutes(because we use the full latex library), so please be patient.
+## Usage 
+
+1. Copy this template 
+2. Edit main.tex or related .ex files
+3. To check locally the file, run the 
+``` docker-compose up``` 
+and check the main.pdf file
+4. push and be proud !
+5. Your report can be found in pdf format on the release option and in html format on the github page of your project.
+
+## Contributing
+Report-ghPages-latex is an open source project. If you want to contribute, you can do so by forking the repository on GitHub and submitting a pull request.
+
+## License
+Report-ghPages-latex is distributed under the MIT license.
+
+## Contact information
+If you need help or want to provide feedback, you can contact me at matteosantoro2799@gmail.com
+
+## Special thanks to 
+
+- [Memer Gamer repo](https://github.com/MemerGamer/LaTex-Publishing) that developed the base workflow to push on gituhb pages 
+- [OverLeaf Tex template](https://www.overleaf.com/latex/templates/university-of-reading-computer-science-report-template-and-guide/xhttddjhkwrf) BY Varun Ojha
