@@ -6,5 +6,4 @@ services:
     volumes:
       - "./:/workdir"
     working_dir: "/workdir"
-    command: ["latexmk", "-pdf", "report/main.tex"]
-
+    command: ["/bin/sh", "locallyTest.sh"]
